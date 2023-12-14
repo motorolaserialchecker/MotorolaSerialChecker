@@ -1,0 +1,29 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Radio Manufacture Date Checker</title>
+	<link rel="stylesheet" href="css/radiostyle.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="scripts/radioformscripts.js"></script>
+</head>
+<body>
+    <h2>Radio Manufacture Date Checker</h2>
+	<div class="container">
+		<div class="serialFormArea">
+			<form class="form-inline" id="serialForm">
+				<!-- <label for="serial">Radio Serial Number</label>			 -->
+				<input type="text" id="serial" name="serial" autocomplete="off" placeholder="Enter the serial number." maxlength="11"><input type="submit" class="submit" id="savebutton" name="savebutton" value="Check" disabled>
+				<label for="output" id="output"></label>
+				<br>
+				<label for="example" id="example" style="font-size: 12px"></label>
+				<br>
+				<label for="rule" id="rule" style="font-size: 10px"><bold>Please Note: </bold>This is only valid for Motorola radios.</label>
+			</form>
+		</div>
+		<div class="serialHistoryArea">
+			<table id="radioHistoryTable">
+			</table>
+		</div>
+	</div>
+</body>
+</html>
